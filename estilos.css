@@ -1,0 +1,711 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Start of the RESET CSS*/
+.ui-jcoverflip {
+        position: relative;
+      }
+      
+      .ui-jcoverflip--item {
+        position: absolute;
+        display: block;
+      }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    font-family: HelveticaNeue_Roman,'Source Sans Pro', sans-serif;
+
+}
+
+/* remember to define focus styles! */:focus {
+    outline: 0;
+}
+
+body {
+    line-height: 1;
+    color: black;
+    background: black;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+
+blockquote, q {
+    quotes: "" "";
+}
+
+/*End of the RESET CSS*/
+html, body {
+    height: 100%;
+}
+
+a:hover {
+	color: black;
+	}
+
+#content_body, #box_centrado_publicidad_1 {
+	max-width: 1020px;
+	/*margin: 0 auto;*/
+    padding: 0;
+	}
+
+.wrapper {
+    /*float: left;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto !important;
+    height: 100%;*/
+}
+
+.bigcontainer {
+    margin: 0 auto;
+    background: transparent url(../img/alpha30_bg.png) repeat;
+    margin: 0 auto;
+    position: relative;
+    height: auto;
+    min-height: 500px;
+    overflow: hidden;
+    box-shadow: #333 0px 0px 10px;
+    z-index: 10;
+	}
+
+
+.lfplogo a {
+    /*width: 100%;
+    height: 100%;
+    float: left;*/
+}
+
+#user, #loginView {
+   	width: 248px;
+	height: 48px;
+	z-index: 11;
+	position: absolute;
+	right: 15px;
+	background-color: black;
+	padding: 3px;
+	top: 0;
+	}
+	#userpic {
+	    float: left;
+	    width: 30px;
+	    height: 30px;
+	    margin: 3px 0 0 0;
+	    overflow: hidden;
+		}
+		#userpic img {
+		    border: 1px solid silver;
+		    width: 28px;
+			-moz-border-radius:2px;
+			}		
+			#userpic img:hover {
+		    	border: 1px solid #7f7f7f;
+				}
+			#userinfo {
+			    float: left;
+				width: 135px;
+				height: 100%;
+				margin-left: 5px;
+				border-right: 1px solid white;
+				}
+				#userinfo .name{
+					position: relative;
+					float: left;
+					width: 100%;
+					text-align: left;
+					font-weight: bold;
+					color: white;
+					margin-top: 3px;
+					}
+					#userinfo p{
+						position: relative;
+						float: left;
+						width: 100%;
+						text-align: left;
+						color: grey;
+					}
+					#userinfo .reload_pingoles{width:63px;height:16px;float:right;background:url(../img/reloadpingoles.png);margin:4px 3px 0 0;}
+					#userinfo .reload_pingoles:hover{background-position:0 -16px;}
+					#userinfo .reload_pingoles:active{background-position:0 bottom;}					
+					#userinfo .dropdown_account {
+					    float: left;
+					    padding: 4px 2px 6px 2px;
+					    border-right: 1px solid #cacaca;
+					    border-bottom: 1px solid #cacaca;
+					    border-top: 1px solid #dadada;
+					    border-left: 1px solid #dadada;
+					    background: white url(../img/bg_account.gif) repeat-x 0 bottom;
+					    overflow: hidden;
+					    z-index: 100;
+					}					
+					#userinfo .dropcontainer {
+					    padding: 6px 10px 10px 10px;
+					    position: absolute;
+					    right: 0;
+					    top: 29px;
+					    width: 160px;
+					    height: 95px;
+					    z-index: 999;
+						}						
+						#userinfo .dropdown_account ul li a {
+						    width: 101px;
+						    padding: 7px 37px 5px 7px;
+						    margin: 0 3px;
+						    text-align: right;
+						    float: left;
+							}						
+							#userinfo .dropdown_account ul li a.fb_button {
+							    float: right;
+							    margin: 6px 10px 0 0;
+							    padding: 0;
+							    width: 137px;
+							    text-align: center;
+							}						
+							#userinfo .dropdown_account .profile {
+							    border-bottom: 1px solid #e2e2e2;
+							    background: url(../img/account_menu_icon_1.png) no-repeat 130px 7px;
+							}
+							
+							#userinfo .dropdown_account .logout {
+							    border-bottom: 1px solid #e2e2e2;
+							    background: url(../img/account_menu_icon_2.png) no-repeat 130px 6px;
+							}
+							
+							#userinfo .dropdown_account .logout_fb {
+							    background: url(../img/account_menu_icon_3.png) no-repeat 130px 7px;
+							}
+#loginView {
+    background: none;
+	}
+	#loginView input {
+	    border: 1px solid silver;
+	    border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    height: 34px;
+	    width: 100%;
+	    padding: 2px 8px;
+	    font-size: 11px;
+		}
+		#loginView .incorrect {
+		    border: 1px solid #e40000;
+		}
+		#loginView .register, #loginView .login {
+		    position: relative;
+		    background: url(../img/btn_login.png) no-repeat;
+		    width: 84px;
+		    height: 32px;
+		    float: left;
+		    text-align: center;
+		    vertical-align: middle;
+		    margin-top: 6px;
+		    padding: 4px;
+		    text-decoration: none;
+		}
+		#loginView .register{
+		    /*float:right;
+		    width:102px;
+		    height:19px;
+		    background:url(../img/bg_blueheader.gif);
+		    text-align:center;
+		    color:white;
+		    padding-top:2px;
+		    margin-top:20px;
+		    margin-right: 26px*/
+		   	margin-left: 50px;
+			}
+			#loginView .register:hover, #loginView .login:hover{
+			    cursor:pointer;
+			    color:white;
+			    opacity: 0.5;
+			}
+			#loginView .login{
+			    /*float:right;
+			    width:129px;
+			    height:19px;
+			    background:url(../img/bg_blueheader.gif);
+			    text-align:center;
+			    margin:10px 26px 0 20px;
+			    color: white;
+			    font-size: 12px;
+			    padding-top:2px;*/
+			   	margin-left: 10px;
+			}
+			#loginView .dropdown{
+				float:right;
+				height:142px;
+				width:247px;
+				background:url(../img/bg_loginview_login.png);
+				padding:30px 20px 10px 20px;
+				position:absolute;
+				top:75px;
+				right:31px;
+				z-index:20;
+			}
+			#loginView label {
+			   float:left;
+			   font-size:11px;
+			}	
+			#loginView .mail{
+				position:absolute;
+				top:38px;
+				left:29px;
+				}
+			#loginView .pass{
+				position:absolute;
+				top:75px;
+				left:29px;
+				}
+			#loginView .session{
+				float:right!important;
+				margin-right:55px;
+				}
+			#id_username {
+			    width: 100%;
+			    margin-bottom: 5px;
+				}
+			#id_password {
+			    width: 100%;
+			    margin-bottom: 5px;
+				}
+
+#loginView button {
+    width: 100%;
+	height:28px;
+    border: 0;
+	text-align:center;
+    float: left;
+    /*background:url(../img/bg_blueheader.gif);*/
+    background-color: #0054a0;
+    margin: 0;
+    cursor: pointer;
+	color:white;
+	font-size: 14px;
+}
+
+#loginView button:hover {
+    opacity: 0.5;
+}
+
+#loginView .check{width:15px;height:15px;float:left;margin-top:10px;}
+#loginView .session{float:left;margin-top:10px;color:#4b4b4b;}
+#loginView .forgetBtn{
+    float:left;
+    margin-top:5px;
+    clear:both;
+    color: #2B4D7C;
+    width: 100%;
+    text-align: center;
+}
+#loginView .forgetBtn:hover{color:#0390C4 !important;}
+
+.hidden {
+    display: none;
+}
+
+#loginView .login_menu {
+    width: 250px;
+    height: 150px;
+    top: 45px;
+    left: -25px;
+    background: url(../img/bg_desplegable_login.png) no-repeat;
+    padding: 16px!important;
+	}
+#loginView #errorlogin {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    float: left;
+    margin-top: 9px;
+    }
+	#loginView #errorlogin ul {
+		background: url(../img/bg_desplegable_login.png) no-repeat;
+		border-radius: 4px;
+		}
+		#loginView #errorlogin li {
+		    text-align: center;
+		    color: #BD322B;
+		    padding: 2px;    
+			}
+			#loginView #errorlogin li:hover {
+			    background: transparent;
+				}
+
+#menuLogin .dropdown-menu {
+    background: url(../img/bg_desplegable_login.png) no-repeat;
+	}
+
+
+/*FOOTER*/
+
+#footer_lfp{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	background: #384D50;
+	}
+	#footer_lfp *{
+		font-size: 16px;
+		font-family: MyriadCond;
+		}
+		#footer_lfp > div.header_footer{
+			height: 55px;
+			background: #BD322B;
+			}
+			#footer_lfp > div.header_footer > div{
+				width: 1000px;
+				margin: 0 auto;
+				text-align: center;
+				}
+				#footer_lfp > div.header_footer > div a{
+					float: left;
+				}
+				#footer_lfp > div.content_footer{
+					width: 1000px;
+					margin: 0 auto;
+					padding-top:10px;
+				}
+
+.ulMapa {
+	font-family:MyriadPro;
+	color:White;
+	font-size:16px;
+    float:left;
+    width:155px;
+    text-align:left;	
+    list-style-type: none;
+	}
+	.ulMapa li {
+		list-style-type: none;
+		}		
+		.ulMapa li a:hover {
+			text-decoration: underline;
+			}		
+			.ulMapa li.level1 a:link, .ulMapa li.level1 a:visited {
+				font-family:MyriadCond;
+				color:White;
+				list-style-type: none;
+				font-weight:bold;		
+				}
+				.ulMapa li.level1 ul.level2 li a:link {
+					font-family:MyriadPro;
+					color:White;
+					list-style-type: none;
+					font-size:12px;
+					text-decoration:underline;
+					font-weight: normal;
+					}
+					.ulMapa ul.level2{
+						padding: 0 0 1em 0;
+						}
+						.ulMapa ul.level2 li a span{
+							font-family: MyriadPro !important;
+							font-size: 12px!important
+							}
+.bulletMapa {
+	padding-left:10px;
+	background-image:url(../img/bulletB.jpg);
+	background-position:left center;
+	background-repeat: no-repeat;
+	}
+.ads_footer{
+	float: right;
+    margin: 35px;
+	}
+.pie_footer{
+	float: left;
+	margin: 20px 0 20px -10px;
+	}
+	
+#footer_lfp h1, #footer_lfp h2{
+	float: left;
+	width: 100%;
+	color: white;
+	font-size: 13px;
+	font-weight: normal;
+	}
+	#footer_lfp h2{
+		font-size: 12px;
+		margin-bottom: 30px;
+		}
+		#footer_lfp .contact{
+			float: left;
+			width: 970px;
+			height: 57px;
+			margin-bottom: 10px;
+			background-image: url("../img/home_2012/pie.png");
+			}
+			#footer_lfp .contact > div{
+				float: right;
+				margin-top: 20px;
+				}
+				#footer_lfp .contact > div a{
+					padding: 0 6px;
+					border-right: 2px solid white;
+					color: white;
+					}
+					#footer_lfp .contact > div a:hover{
+						text-decoration: underline;
+						}
+						#footer_lfp .contact > div a.last{
+							border: 0;
+							}
+
+#main_header {
+	width: 100%;
+	float: left;
+	position: relative;
+	}
+	#main_header div.login {
+		position: absolute;
+		top: 5px;
+		right: 0;
+		width: 228px;
+		}
+
+/*#main_header a.login {
+	position: relative;
+	float: right;
+	color: white;
+	padding: 4px;
+	padding-right: 10px;	
+}*/
+
+#header_top {
+	width: 1020px;
+	height: 110px;
+	position: relative;
+	float:left;
+    background: url(../img/main_bg.png) -207px -100px no-repeat;
+    margin: 20px 0 10px 0px;
+	}
+
+#submenu2 li.first span {
+	margin-left: 4px;
+	}
+	#submenu2 span {
+		font-size:11px;
+		margin-right: 3px;
+		margin-left: 3px;
+		}
+
+.sf-sub-indicator {
+	display: none;
+	}
+
+#menu {
+    /*width: 935px!important;*/
+    height: 80px!important;
+    /*left: 17px!important;*/
+    display: block!important;
+    padding: 0px!important;
+    margin: 15px 0 15px 85px!important;
+    background: url('../img/degradado_header.png');
+	}
+
+.sf-menu li, #submenu2 li{
+	background: url("../img/header_lfp/separador.jpg") 100% 0px no-repeat!important;
+	}
+.sf-menu li.last, #menu li.last, #submenu2 li.last{
+	background: none!important;
+	}
+
+#user a {
+	position:	absolute;
+	}
+	#user a.user_pic {
+		position: relative;
+		float: left;
+		}
+		#user a.user_pic img {
+			width: 40px;
+			height: 40px;
+			-webkit-border-radius: 50em;
+			-moz-border-radius: 50em;
+			border-radius: 50em;
+			}
+			#user a.user_more {
+				position: relative;
+				float: left;
+				height: 58%;	
+				width: 12px;
+				background: url("../img/user_info_icons_arrow.gif") 80% 50% no-repeat!important;
+				margin-top: 7px;
+				padding-right: 0;
+				}
+				#user .profile , #user .logout{
+					position: relative;
+					float: left;
+					color: #2b4d7c;
+					text-decoration: none;
+					text-align: center;
+					width: 100%;
+					background-color: #0054a0;
+					color: white;
+					}
+					#user .profile:hover , #user .logout:hover{
+					    background-color: #0054a0;
+					    opacity: 0.5;
+						}
+						#user .dropdown-menu {
+							top: 46px;
+							}
+							#user .dropdown-menu li{
+							    display: inline-block;
+							    width: 100%;
+							    padding: 6px 10px 6px 10px!important;       
+								}
+								#user .dropdown-menu li:hover{
+								    background: transparent!important;       
+									}
+
+/* HOME SECTION */
+#container {
+	/*position: relative;*/
+	float: left;
+	background: url('../img/alpha30_bg.png');
+	box-shadow: #333 0px 0px 10px;
+	width: 100%;
+    z-index: 100;
+	}
+	#container .row-carousel{
+		margin-right: 0;
+		margin-left: 0;		
+		}
+
+#games-carousel .carousel-control .icon-next:before, #games-carousel .carousel-control .icon-prev:before{
+    content: '';
+	}
+	#games-carousel span.icon-next {
+	    background: url('../img/btn_slide_right.png');
+	    width: 40px;
+	    height: 40px;
+		}
+		#games-carousel span.icon-prev {
+		    background: url('../img/btn_slide_left.png');
+		    width: 40px;
+		    height: 40px;
+			}
+
+.bg_color_gray {
+	background-color: #CFD0D7;
+}
+.bg_color_white {
+	background-color: white;
+}
+.bg_color_header {
+	background-color: #CFD0D7;
+}
+.bg_color_header_ranking {
+	background-color: #222221;
+}
+.bg_color_ranking {
+	background-color: #353532;
+}
+.font_weight {
+	font-weight: bold;
+}
+.font_color_white {
+	color: white;
+}
+.font_color_gray {
+	color: #E7E7E6;
+}
+
+/* FORUM */
+#djangobbwrap {
+	margin: 15px 15px 90px 15px!important;
+	background-color: white;
+	border: 1px solid transparent;
+	}
+	#djangobbwrap #brdmenu{
+		height: 2em;
+		}
+		#djangobbwrap .box {
+			width: 100%;
+			}
+			#djangobbwrap h2{
+				height: 2em;
+				}
+#brdmenu {
+	height: 24px!important;
+	background: linear-gradient(to top,#1D1D1B,#3B85D4)!important;
+	opacity: 0.9;
+	}
+.djangobb H2 {
+	height: 26px!important;
+	background: linear-gradient(to top,#1D1D1B,#3B85D4)!important;
+	opacity: 0.9;
+	}
+/* END FORUM */
+
+#webcontent {
+	margin: 15px;
+	background-color: white;
+}
+
+/* MENU */
+.menu_social {
+    float: right!important;
+    background-color: black;
+    width: 85px!important;
+    }
+    .menu_social > a > div {
+        background: url('../img/main_bg.png');
+        width: 66px;
+        height: 17px;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .menu_social .menu_facebook {
+        background-position: 0px -65px;
+        }
+        .menu_social .menu_facebook:hover {
+            background-position: -70px -65px;
+        }     
+    .menu_social .menu_twitter {
+        background-position: 2px -82px;
+        }
+        .menu_social .menu_twitter:hover {
+            background-position: -68px -82px;
+        }
+    .menu_social .menu_instagram {
+        background-position: 0px -101px;
+        }
+        .menu_social .menu_instagram:hover {
+            background-position: -70px -101px;
+        }
+    
+.menu_social:hover {
+    background-color: black!important;
+}
+#miaplicacion{
+	width:100%;
+	height:1200px;
+}
+/* FIN MENU */
