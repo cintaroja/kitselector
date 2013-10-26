@@ -1,12 +1,24 @@
 /*** Overall MovingBoxes Slider ***/
+#container{
+	padding:50px;
+}
+#gol_keeper_slider{
+position:relative;
+float:left;
+margin:0px 0px 50px 0px;
+	
+}
+#players_slider{
+	position:relative;
+	float:left;
+	margin:0px 95px 50px 0px;
+}
 .mb-wrapper {
-	border: 5px solid #ccc;
-	margin: 0 auto 20px;
+	margin: 15px 5px;
 	position: relative;
 	left: 0;
 	top: 0;
-	border-radius: 10px;
-	box-shadow: inset 0 0 10px #888;
+
 }
 
 /* Panel Wrapper */
@@ -24,15 +36,11 @@
 	font-size: 18px;
 }
 
-/* active slider border highlight */
-.mb-active-slider {
-	border-color: #333;
-}
 
 /*** Slider panel ***/
 .mb-slider .mb-panel {
 	margin: 0;
-	padding: 20px;
+	padding: 10px;
 	display: block;
 	cursor: pointer;
 	float: left;
@@ -47,8 +55,8 @@ change .current class name using plugin option, currentPanel : 'current' */
 
 /*** Inside the panel ***/
 .mb-inside {
-	padding: 10px;
-	border: 1px solid #999;
+	padding: 5px;
+
 }
 
 .mb-inside * {
@@ -85,32 +93,4 @@ a.mb-scrollButtons.mb-right:hover {
 }
 a.mb-scrollButtons.disabled {
 	display: none;
-}
-
-/*** Controls added below the panels ***/
-.mb-controls {
-	margin: 0 auto;
-	text-align: center;
-	background: #ccc;
-	position: relative;
-	z-index: 100;
-}
-.mb-controls a {
-	color: #666;
-	font: 18px/2.2 Georgia, Serif;
-	display: inline-block;
-	text-decoration: none;
-	padding: 2px;
-	margin: 0 5px 0 0;
-	text-align: center;
-	outline: 0;
-}
-.mb-controls a:hover {
-	color: black;
-}
-.mb-controls a.current {
-	color: white;
-}
-.mb-active-slider .mb-controls {
-	background: #333;
 }
