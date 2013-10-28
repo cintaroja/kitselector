@@ -76,12 +76,14 @@ margin:0px 0px 50px 0px;
 	margin-left: -500px;
 	visibility: hidden;
 	background-color: #999999;
-	
+	background-image: url(imagenes/fondo_equipaciones.jpg);
+	background-repeat: no-repeat;
+	background-size: 1000px auto;
 			}
 		
 #txt{
 	position:absolute;
 	margin:15%;
-	color: #000000;
+	color: #ffffff;
 	font-size: xx-large;
 }
