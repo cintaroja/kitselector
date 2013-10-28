@@ -4,6 +4,24 @@
  * http://css-tricks.com/moving-boxes/
  */
 /*jshint browser:true, jquery:true */
+function inicializar()
+{
+//aumenta la opacidad de la capa de publicidad y disminuye del resto
+//1---100%
+document.getElementById("kit_sent").style.visibility="visible"
+
+document.getElementById("kit_sent").style.opacity=0.9
+document.getElementById("container").style.opacity=0.5
+}
+
+
+function cerrar()
+{
+document.getElementById("kit_sent").style.opacity=0
+document.getElementById("container").style.opacity=1
+}
+
+
 ;(function($){
 	"use strict";
 	$.movingBoxes = function(el, options){
