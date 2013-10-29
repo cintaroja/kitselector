@@ -4,6 +4,35 @@
  * http://css-tricks.com/moving-boxes/
  */
 /*jshint browser:true, jquery:true */
+$(function(){
+
+		$('#slider,#slider2,#slider3').movingBoxes({
+			/* width and panelWidth options deprecated, but still work to keep the plugin backwards compatible
+			width: 500,
+			panelWidth: 0.5,
+			*/
+			startPanel   : 2,      // start with this panel
+			wrap         : false,  // if true, the panel will infinitely loop
+			buildNav     : true,   // if true, navigation links will be added
+			navFormatter : function(){ return "&#9679;"; } // function which returns the navigation text for each panel
+		});
+
+	});
+	$(function(){
+
+		$('#slider_golkeeper,#slider_golkeeper2,#slider_golkeeper3').movingBoxes({
+			/* width and panelWidth options deprecated, but still work to keep the plugin backwards compatible
+			width: 500,
+			panelWidth: 0.5,
+			*/
+			startPanel   : 1,      // start with this panel
+			wrap         : false,  // if true, the panel will infinitely loop
+			buildNav     : true,   // if true, navigation links will be added
+			navFormatter : function(){ return "&#9679;"; } // function which returns the navigation text for each panel
+		});
+
+	});
+	
 function inicializar()
 {
 //aumenta la opacidad de la capa de publicidad y disminuye del resto

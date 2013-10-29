@@ -34,6 +34,8 @@ margin:0px 0px 50px 0px;
 #logo{
 	width:1000px;
 	height:90px;
+	position: relative;
+	float: left;
 }
 #players{
 	position: relative;
@@ -86,4 +88,23 @@ margin:0px 0px 50px 0px;
 	margin:15%;
 	color: #ffffff;
 	font-size: xx-large;
+}
+#txt_ok{
+	position: relative;
+	float: left;
+	clear:right;
+	vertical-align: central;
+	color: #FFFFFF;
+	margin-right:150px;
+	margin-left:150px;
+	margin-bottom:50px;
+	font-size: xx-large;
+	text-align: rigth;
+	text-indent: 25px;
+	text-shadow: 2px 3px 2px #000000;
+	
+}
+#close_buttom{
+	background-color: #FFFFFF;
+	font-size: large;
 }
