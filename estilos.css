@@ -1,3 +1,54 @@
+body, html {
+            margin: 0px;
+            height: 100%;
+        }
+        body {
+            width: 100%;
+            float: left;
+        }
+       #main_container {
+            text-align: left;
+            vertical-align: middle;
+            margin: 0px auto;
+            padding: 0px;
+            width: 1000px;
+            background-color: trasparent;
+        }
+        #sb-player.html {
+            overflow: hidden!important;
+        }
+        #browserInfo {
+            display:block;
+            clear:both;
+            text-align: center;
+            width:100%;
+            background-color:white;
+            padding: 20px 0;
+            overflow:auto;
+        }
+        #browserInfo h1 {
+            font-size: 120%;
+            padding: 0 0 10px;
+        }
+        #browserInfo a{
+            margin: 20px 10px;
+        }
+        .template * {
+            display: none;
+        }
+		/* Dimensions set via css in MovingBoxes version 2.2.2+ */
+		#slider { width: 400px; }
+		#slider li { width: 250px; }
+		#slider2 { width: 400px; }
+		#slider2 li { width: 250px; }
+		#slider3 { width: 400px; }
+		#slider3 li { width: 250px; }
+		#slider_golkeeper { width: 400px; }
+		#slider_golkeeper li { width: 250px; }
+		#slider_golkeeper2 { width: 400px; }
+		#slider_golkeeper2 li { width: 250px; }
+		#slider_golkeeper3 { width: 400px; }
+		#slider_golkeeper3 li { width: 250px; }
 #container{
 	padding:50px;
 }
@@ -26,6 +77,17 @@ margin:0px 0px 50px 0px;
 	vertical-align: central;
 	color: #FFFFFF;
 	font-size: xx-large;
+	text-align: rigth;
+	text-indent: 25px;
+	margin-top: 15px;
+	text-shadow: 2px 3px 2px #000000;
+}
+#name2{
+	position: relative;
+	float: right;
+	vertical-align: central;
+	color: #FFFFFF;
+	font-size: x-large;
 	text-align: rigth;
 	text-indent: 25px;
 	margin-top: 15px;
@@ -82,6 +144,22 @@ margin:0px 0px 50px 0px;
 	background-repeat: no-repeat;
 	background-size: 1000px auto;
 			}
+			
+#kit_sent2{
+	z-index: 100000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1000px;
+	height: 700px;
+	margin-top: -350px;
+	margin-left: -500px;
+	visibility: hidden;
+	background-color: #999999;
+	background-image: url(imagenes/fondo_equipaciones.jpg);
+	background-repeat: no-repeat;
+	background-size: 1000px auto;
+			}
 		
 #txt{
 	position:absolute;
@@ -108,3 +186,11 @@ margin:0px 0px 50px 0px;
 	background-color: #FFFFFF;
 	font-size: large;
 }
+#fixed {
+	position:fixed;
+	width:260px;
+	background-color:#CCC; 
+	right:0px; 
+	top:0px; 
+	z-index:10
+	}
