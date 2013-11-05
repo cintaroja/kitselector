@@ -93,6 +93,17 @@ margin:0px 0px 50px 0px;
 	margin-top: 15px;
 	text-shadow: 2px 3px 2px #000000;
 }
+#name3{
+	position: relative;
+	float: left;
+	vertical-align: central;
+	color: #FFFFFF;
+	font-size: x-large;
+	text-align: rigth;
+	text-indent: 25px;
+	margin-top: 15px;
+	text-shadow: 2px 3px 2px #000000;
+}
 #logo{
 	width:1000px;
 	height:90px;
