@@ -302,7 +302,7 @@ document.getElementById("container").style.opacity=1
 			if (base.$nav) {
 				base.$nav.find('.mb-links').empty();
 			} else {
-				base.$nav = $('<div class="mb-controls"><span class="mb-links"></span></div>').appendTo(base.$wrap);
+				base.$nav = $('<span class="mb-links"></span></div>').appendTo(base.$wrap);
 			}
 			if (o.buildNav && base.totalPanels > 1) {
 				var t, j, a = '', $a;

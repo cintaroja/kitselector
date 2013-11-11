@@ -37,49 +37,56 @@ body, html {
             display: none;
         }
 		/* Dimensions set via css in MovingBoxes version 2.2.2+ */
-		#slider { width: 400px; }
-		#slider li { width: 250px; }
-		#slider2 { width: 400px; }
-		#slider2 li { width: 250px; }
-		#slider3 { width: 400px; }
-		#slider3 li { width: 250px; }
-		#slider_golkeeper { width: 400px; }
-		#slider_golkeeper li { width: 250px; }
-		#slider_golkeeper2 { width: 400px; }
-		#slider_golkeeper2 li { width: 250px; }
-		#slider_golkeeper3 { width: 400px; }
-		#slider_golkeeper3 li { width: 250px; }
+		#slider { width: 350px; }
+		#slider li { width: 200px; }
+		#slider2 { width: 350px; }
+		#slider2 li { width: 200px; }
+		#slider3 { width: 350px; }
+		#slider3 li { width: 200px; }
+		#slider_golkeeper { width: 350px; }
+		#slider_golkeeper li { width: 200px; }
+		#slider_golkeeper2 { width: 350px; }
+		#slider_golkeeper2 li { width: 200px; }
+		#slider_golkeeper3 { width: 350px; }
+		#slider_golkeeper3 li { width: 200px; }
 #container{
-	padding:50px;
+	padding:20px;
 }
 #gol_keeper_slider{
 position:relative;
 float:left;
-margin:0px 0px 50px 0px;
+margin right:95px;
+	margin-left:110px;
 	
 }
 #players_slider{
 	position:relative;
 	float:left;
-	margin:0px 95px 50px 0px;
+	margin right:95px;
+	margin-left:50px;
 }
 #shield{
-	width: 90px;
-	height: 90px;
+	width: 50px;
+	height: 50px;
 	position:relative;
 	float:left;
-	margin-left:300px;
+	margin-left:10px;
 	}
 	
+	#vs{
+		width:60px;
+		position: relative;
+	float: left;
+	margin-left:20px;
+	}
 #name{
 	position: relative;
 	float: left;
 	vertical-align: central;
 	color: #FFFFFF;
-	font-size: xx-large;
+	font-size: x-large;
 	text-align: rigth;
 	text-indent: 25px;
-	margin-top: 15px;
 	text-shadow: 2px 3px 2px #000000;
 }
 #name2{
@@ -106,15 +113,16 @@ margin:0px 0px 50px 0px;
 }
 #logo{
 	width:1000px;
-	height:90px;
+	height:50px;
 	position: relative;
 	float: left;
+	margin-left:200px;
 }
 #players{
 	position: relative;
 	float: left;
 	color: #FFFFFF;
-	font-size: x-large;
+	font-size: large;
 	text-align: rigth;
 	text-indent: 25px;
 	margin-top: 15px;
@@ -124,7 +132,7 @@ margin:0px 0px 50px 0px;
 	position: relative;
 	float: right;
 	color: #FFFFFF;
-	font-size: x-large;
+	font-size: large;
 	text-align: rigth;
 	text-indent: 25px;
 	margin-top: 15px;
@@ -147,7 +155,7 @@ margin:0px 0px 50px 0px;
 	left: 50%;
 	width: 1000px;
 	height: 700px;
-	margin-top: -350px;
+	margin-top:-150px;
 	margin-left: -500px;
 	visibility: hidden;
 	background-color: #999999;
@@ -161,11 +169,11 @@ margin:0px 0px 50px 0px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	visibility:hidden;
 	width: 1000px;
 	height: 700px;
-	margin-top: -350px;
+	margin-top: -200px;
 	margin-left: -500px;
-	visibility: hidden;
 	background-color: #999999;
 	background-image: url(imagenes/fondo_equipaciones.jpg);
 	background-repeat: no-repeat;
@@ -174,6 +182,7 @@ margin:0px 0px 50px 0px;
 		
 #txt{
 	position:absolute;
+	float:left;
 	margin:15%;
 	color: #ffffff;
 	font-size: xx-large;
@@ -205,3 +214,27 @@ margin:0px 0px 50px 0px;
 	top:0px; 
 	z-index:10
 	}
+	#buttom{
+width: 90px;
+	height: 30px;
+	position:relative;
+	float:left;
+	margin:40px;
+	background-color: #990000;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: large;
+	padding-left:20px;
+	}
+#buttoms{
+width:500px;
+height:32px;
+margin-top:500px;
+margin-left:300px;
+}
+#container{
+	height:900px;
+}
