@@ -225,12 +225,15 @@ margin right:95px;
 	font-size: large;
 }
 #fixed {
-	position:fixed;
-	width:260px;
-	background-color:#CCC; 
-	right:0px; 
-	top:0px; 
-	z-index:10
+	position: fixed;
+	width: 250px;
+	left: 10px;
+	bottom: 10px;
+	z-index: 10;
+	padding: 15px;
+	border-radius: 20px;
+	background-image: url(imagenes/fondo_fixed.png);
+	background-repeat: repeat;
 	}
 	#buttom{
 width: 90px;
