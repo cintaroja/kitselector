@@ -24,20 +24,11 @@
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css'>
     <style>
+        
     </style>
     
 
 <link href="http://static.lfp.estoesotraliga.s3.amazonaws.com/site_media/liga_juegos/css/home.css" type="text/css" rel="stylesheet" />
-<style type="text/css">
-#apDiv1 {
-	position: absolute;
-	width: 250px;
-	height: 303px;
-	z-index: 1;
-	left: 21px;
-	top: 233px;
-}
-</style>
 
     <!-- END CSS -->
 
@@ -55,15 +46,21 @@
     </script>
     
 </head>
-<body >
-<div id="apDiv1">Pendiente aprobación</div>
-<div id="apDiv2">El equipo visitante no ha elegido vestimenta</div>
+<body onLoad="cerrar()" >
+<div id="kit_sent3">
+   <div id="txt"> El equipo local no ha hecho su selección.</br>Debe esperar para poder acceder</div>
+    <div id="buttoms"><a href="http://www.lfp.es"><div id="buttom">Salir</div></a> <a href="index.html">
+    <div id="buttom">Inicio</div></a>
+    </div>
+    </div>
+
+ 
    
 
 
 
     <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MR3TRZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MR3TRZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MR3TRZ');
     </script>
@@ -79,7 +76,13 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-
+<div id="kit_sent">
+   <div id="txt"> Su selección ha sido enviada correctamente.</br> En breve recibirá aprovación</div>
+    <div id="buttoms"><a href="http://www.lfp.es"><div id="buttom">Salir</div></a> <a href="index.html">
+    <div id="buttom">Inicio</div></a>
+    </div>
+    </div>
+    </div>
     <div id="content_body" class="container">
         <div id="main_header">
             
@@ -215,9 +218,17 @@
 
         
         <div id="container">
-      <div id="welcome">Vista previa </div>  
-      <div id="logo">
+        <div id="logo">
         
+        <div id="shield">
+        
+          <img src="imagenes/malaga.png" alt="picture" width="50"></a>
+        
+         </div>
+        
+        
+        <div id="name">Málaga C.F.</div>
+        <div id="vs"><img src="imagenes/vs.png" width="50" height="41">  </div>      
         <div id="shield">
         
           <img src="imagenes/FC-Barcelona.png" alt="picture" width="50"></a>
@@ -226,60 +237,167 @@
         
         
         <div id="name">F.C. Barcelona</div>
-        <div id="vs"><img src="imagenes/vs.png" width="50" height="41">  </div>      
-        <div id="shield">
-        
-          <img src="imagenes/Levante_ud.png" alt="picture" width="50"></a>
-        
-         </div>
-        
-        
-        <div id="name">Levante U.D.</div>
         </div>
-         <div id="summary1">
-    
-  
-  <div class="pull-left">
-       	<div><img src="demo/barsa_shirt1.png" alt="picture" width="100"></a></div>
+        <div id="pl_gk">
+       <div id="players">Jugadores
+       </div>
+        <div id="golkeepers">Porteros
+       </div>
+       </div>
+        <div id="players_slider">
+            
+<div id="wrapper">
+		<!-- MovingBoxes Slider -->
+    <ul id="slider">
+
+			<li>
+				<img src="demo/barsa_shirt2.png" alt="picture" width="125">
+				</a></p>
+			</li>
+
+			<li>
+				<img src="demo/barsa_shirt1.png" alt="picture" width="125">
 				
-				<div><img src="demo/barsa_short1.png" alt="picture" width="80"></a></div>
+			</li>
+
+			<li>
+				<img src="demo/barsa_shirt3.png" alt="picture" width="125">
 				
-			<div><img src="demo/barsa_tights1.png" alt="picture" width="80"></a></div>
-  </div>
-  <div class="pull-right">
-            	<div><img src="demo/barsa_shirt_golkeeper1.png" alt="picture" width="100"></a></div>
+			</li>
+
 			
-			<div><img src="demo/barsa_short1.png" alt="picture" width="80"></a></div>
-			<div><img src="demo/barsa_tights1.png" alt="picture" width="80"></a></div>
-            </div>
-        </div>
-         <div id="summary2">
-    
-  
-  <div class="pull-left">
-       	<div><img src="demo/levante_shirt3.png" alt="picture" width="100"></a></div>
+
+		</ul><!-- end Slider #1 -->
+
+	</div><!-- end wrapper -->
+    <div id="wrapper2">
+		<!-- MovingBoxes Slider -->
+		<ul id="slider2">
+
+			<li>
+				<img src="demo/barsa_short2.png" alt="picture" width="125">
+				</a></p>
+			</li>
+
+			<li>
+				<img src="demo/barsa_short1.png" alt="picture" width="125">
 				
-				<div><img src="demo/levante_short3.png" alt="picture" width="80"></a></div>
+			</li>
+
+			<li>
+				<img src="demo/barsa_short3.png" alt="picture" width="125">
 				
-			<div><img src="demo/levante_tights3.png" alt="picture" width="90"></a></div>
-  </div>
-  <div class="pull-right">
-            	<div><img src="demo/barsa_shirt_golkeeper1.png" alt="picture" width="100"></a></div>
+			</li>
+
 			
-			<div><img src="demo/barsa_short1.png" alt="picture" width="80"></a></div>
-			<div><img src="demo/barsa_tights1.png" alt="picture" width="80"></a></div>
-            </div>
-        </div>
+
+		</ul><!-- end Slider #2 -->
+
+	</div><!-- end wrapper -->
+    <div id="wrapper3">
+		<!-- MovingBoxes Slider -->
+		<ul id="slider3">
+
+			<li>
+				<img src="demo/barsa_tights2.png" alt="picture" width="125">
+				</a></p>
+			</li>
+
+			<li>
+				<img src="demo/barsa_tights1.png" alt="picture" width="125">
+				
+			</li>
+
+			<li>
+				<img src="demo/barsa_tights3.png" alt="picture" width="125">
+				
+			</li>
+
+			
+
+		</ul><!-- end Slider #2 -->
+
+	</div><!-- end wrapper -->
+    </div>
+      
+    <div id="gol_keeper_slider">
+    <div id="wrapper4">
+    <ul id="slider_golkeeper">
+
+			<li>
+				<img src="demo/barsa_shirt_golkeeper1.png" alt="picture" width="125">
+				</a></p>
+			</li>
+
+			<li>
+				<img src="demo/barsa_shirt_golkeeper2.png" alt="picture" width="125">
+				
+			</li>
+
+		</ul><!-- end Slider #1 -->
+      </div>
         
-        <div id="buttoms2"><a href="local_selector.html"><div id="buttom">Cambiar selección</div></a></div>
-    <div id="buttoms"><a href="http://www.lfp.es"><div id="buttom">Salir</div></a> <a href="index.html">
-    <div id="buttom">Inicio</div></a></div>
+        <div id="wrapper5">
+		<!-- MovingBoxes Slider -->
+		<ul id="slider_golkeeper2">
+
+						<li>
+				<img src="demo/barsa_short1.png" alt="picture" width="125">
+				
+			</li>
+
+			<li>
+				<img src="demo/barsa_short3.png" alt="picture" width="125">
+				
+			</li>
+
+			
+
+		</ul><!-- end Slider #2 -->
+
+	</div><!-- end wrapper -->
+    <div id="wrapper6">
+		<!-- MovingBoxes Slider -->
+		<ul id="slider_golkeeper3">
+
+			<li>
+				<img src="demo/barsa_tights1.png" alt="picture" width="125">
+				
+			</li>
+
+			<li>
+				<img src="demo/barsa_tights3.png" alt="picture" width="125">
+				
+			</li>
+
+			
+
+		</ul><!-- end Slider #2 -->
+
+	</div><!-- end wrapper -->
+    <div id="send_buttom"><input type="submit" onclick="inicializar()" style="width: 90px;
+	height: 30px;background-color: #990000;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: large;">
+    </div>
+    <a href="http://www.lfp.es"><div id="buttom">Salir</div></a> <a href="index.html">
+    <div id="buttom">Inicio</div></a>
+    
+    </div>
+        </div>
+
+</div>
+
+
         
-        </div>
-        </div>
     </div>
 
     <!--FOOTER-->
+    <blockquote>&nbsp;</blockquote>
     <div id="degradado_fondo"></div>
 <div id="box_footer">
     <div id="box_publicidad_1" class="container">

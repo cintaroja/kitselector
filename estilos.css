@@ -197,6 +197,21 @@ margin right:95px;
 	background-repeat: no-repeat;
 	background-size: 1000px auto;
 			}
+			
+			#kit_sent3{
+	z-index: 100000;
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	width: 1000px;
+	height: 730px;
+	margin-top: -200px;
+	margin-left: -500px;
+	background-color: #999999;
+	background-image: url(imagenes/fondo_equipaciones.jpg);
+	background-repeat:repeat;
+	background-size: 1000px auto;
+			}
 		
 #txt{
 	position:absolute;
@@ -236,8 +251,6 @@ margin right:95px;
 	background-repeat: repeat;
 	}
 	#buttom{
-width: 90px;
-	height: 30px;
 	position:relative;
 	float:left;
 	margin:40px;
@@ -248,13 +261,38 @@ width: 90px;
 	border-radius: 5px;
 	color: #FFFFFF;
 	font-size: large;
-	padding-left:20px;
+	padding:5px;
+	}
+	#buttom2{
+	position:relative;
+	float:left;
+	margin-left:1%;
+	background-color: #990000;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: large;
+	padding:5px;
 	}
 #buttoms{
 width:500px;
 height:32px;
 margin-top:300px;
 margin-left:350px;
+}
+#buttoms2{
+width:500px;
+height:32px;
+margin-top:200px;
+margin-left:20%;
+}
+#buttoms3{
+width:500px;
+height:32px;
+margin-top:200px;
+margin-left:54%;
 }
 #game {
 	font-size: 22px;
@@ -272,10 +310,90 @@ margin-left:350px;
 	border-radius:20px;
 	vertical-align:top;
 }
+#game2 {
+	font-size: 22px;
+	color: #FFF;
+	background-image: url(imagenes/fondo_partidos.png);
+	background-repeat: repeat-x;
+	text-align: center;
+	padding: 10px;
+	float: left;
+	height: 50px;
+	width: 850px;
+	margin-left: 50px;
+	margin-top:2%;
+	position: relative;
+	border-radius:20px;
+	vertical-align:top;
+}
 #jornada{
 	
 font-size: 18px;
 	color: #FFF;
 	position:relative;
 	float:left;
+}
+#summary1{
+	position:relative;
+	float:left;
+	width:250px;
+	margin-left:20%;
+	margin-top:5%;
+}
+#summary2{
+	width:250px;
+	position:relative;
+	float:left;
+	margin-left:10%;
+		margin-top:5%;
+}
+#apDiv1{
+	position:relative;
+	float:left;
+	width:250px;
+	margin-left:35%;
+	margin-top:12%;
+	font-size: 32px;
+	color:#FFF;
+	z-index:2000;
+	text-shadow: 2px 3px 2px #000000;
+	transform:rotate(-20deg);
+	-moz-transform:rotate(-20deg);
+	-webkit-transform:rotate(-20deg);
+}
+#apDiv2{
+	position:absolute;
+	width:250px;
+	height:350px;
+	margin-left:53%;
+	margin-top:21%;
+	font-size: 32px;
+	color:#FFF;
+	z-index:3000;
+	text-shadow: 2px 3px 2px #000000;
+	background-image:url(imagenes/fondo_equipaciones.png);
+  border-radius:10px;
+  text-align: center;
+	padding: 10px;
+vertical-align:central;
+}
+
+#apDiv3{
+	position:absolute;
+	width:250px;
+	margin-left:56%;
+	margin-top:27%;
+	font-size: 32px;
+	color:#FFF;
+	z-index:2000;
+	text-shadow: 2px 3px 2px #000000;
+	transform:rotate(-20deg);
+	-moz-transform:rotate(-20deg);
+	-webkit-transform:rotate(-20deg);
+}
+#select{
+	position:relative;
+	float:left;
+	margin-left:6%;
+
 }
