@@ -51,21 +51,30 @@ body, html {
 		#slider_golkeeper3 li { width: 200px; }
 #container{
 	padding:20px;
+	height:600px;
+	overflow:auto;
 }
-#gol_keeper_slider{
+.gol_keeper_slider{
 position:relative;
 float:left;
 margin right:95px;
 	margin-left:110px;
 	
 }
-#players_slider{
+.players_slider{
 	position:relative;
 	float:left;
 	margin right:95px;
 	margin-left:50px;
 }
-#shield{
+.arbitro_slider{
+	width:900px;
+	position:relative;
+	float:left;
+	margin-left:30%;
+	clear:right;
+}
+.shield{
 	width: 50px;
 	height: 50px;
 	position:relative;
@@ -73,13 +82,13 @@ margin right:95px;
 	margin-left:10px;
 	}
 	
-	#vs{
+	.vs{
 		width:60px;
 		position: relative;
 	float: left;
 	margin-left:20px;
 	}
-#name{
+.name{
 	position: relative;
 	float: left;
 	vertical-align: central;
@@ -90,7 +99,7 @@ margin right:95px;
 	text-shadow: 2px 3px 2px #000000;
 	margin:10px;
 }
-#welcome{
+.welcome{
 	position: relative;
 	float: left;
 	margin-left:30%;
@@ -100,7 +109,7 @@ margin right:95px;
 	text-indent: 25px;
 	text-shadow: 2px 3px 2px #000000;
 }
-#name2{
+.name2{
 	position: relative;
 	float: right;
 	vertical-align: central;
@@ -111,7 +120,7 @@ margin right:95px;
 	margin-top: 15px;
 	text-shadow: 2px 3px 2px #000000;
 }
-#name3{
+.name3{
 	position: relative;
 	float: left;
 	vertical-align: central;
@@ -122,21 +131,21 @@ margin right:95px;
 	margin-top: 15px;
 	text-shadow: 2px 3px 2px #000000;
 }
-#logo{
+.logo{
 	width:1000px;
 	height:50px;
 	position: relative;
 	float: left;
 	margin-left:200px;
 }
-#logo2{
+.logo2{
 	width:1000px;
 	height:50px;
 	position: relative;
 	float: left;
 	margin-left:33%;
 }
-#players{
+.players{
 	position: relative;
 	float: left;
 	color: #FFFFFF;
@@ -146,7 +155,7 @@ margin right:95px;
 	margin-top: 15px;
 	text-shadow: 2px 3px 2px #000000;
 }
-#golkeepers{
+.golkeepers{
 	position: relative;
 	float: right;
 	color: #FFFFFF;
@@ -156,17 +165,17 @@ margin right:95px;
 	margin-top: 15px;
 	text-shadow: 2px 3px 2px #000000;
 }
-#pl_gk{
+.pl_gk{
 	width:630px;
 	height:90px;
 	margin-left:110px;
 }
-#send_buttom{
+.send_buttom{
 	
 	position: relative;
 		
 }
-#kit_sent{
+.kit_sent{
 	z-index: 100000;
 	position: absolute;
 	top: 50%;
@@ -182,7 +191,7 @@ margin right:95px;
 	background-size: 1000px auto;
 			}
 			
-#kit_sent2{
+.kit_sent2{
 	z-index: 100000;
 	position: absolute;
 	top: 50%;
@@ -198,7 +207,7 @@ margin right:95px;
 	background-size: 1000px auto;
 			}
 			
-			#kit_sent3{
+			.kit_sent3{
 	z-index: 100000;
 	position: absolute;
 	top: 54%;
@@ -213,14 +222,14 @@ margin right:95px;
 	background-size: 1000px auto;
 			}
 		
-#txt{
+.txt{
 	position:absolute;
 	float:left;
 	margin:15%;
 	color: #ffffff;
 	font-size: xx-large;
 }
-#txt_ok{
+.txt_ok{
 	position: relative;
 	float: left;
 	clear:right;
@@ -235,11 +244,11 @@ margin right:95px;
 	text-shadow: 2px 3px 2px #000000;
 	
 }
-#close_buttom{
+.close_buttom{
 	background-color: #FFFFFF;
 	font-size: large;
 }
-#fixed {
+.fixed {
 	position: fixed;
 	width: 250px;
 	left: 10px;
@@ -250,7 +259,18 @@ margin right:95px;
 	background-image: url(imagenes/fondo_fixed.png);
 	background-repeat: repeat;
 	}
-	#buttom{
+	.fixed2 {
+	position: fixed;
+	width: 250px;
+	right: 10px;
+	bottom: 10px;
+	z-index: 10;
+	padding: 15px;
+	border-radius: 20px;
+	background-image: url(imagenes/fondo_fixed.png);
+	background-repeat: repeat;
+	}
+	.buttom{
 	position:relative;
 	float:left;
 	margin:40px;
@@ -263,7 +283,7 @@ margin right:95px;
 	font-size: large;
 	padding:5px;
 	}
-	#buttom2{
+	.buttom2{
 	position:relative;
 	float:left;
 	margin-left:1%;
@@ -276,25 +296,68 @@ margin right:95px;
 	font-size: large;
 	padding:5px;
 	}
-#buttoms{
+	.buttom3{
+	position:relative;
+	float:left;
+	margin-left:1%;
+	background-color:#0bd82d;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(10,81,21,0.00)),color-stop( 100% , rgba(10,81,21,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(10,81,21,0.00) 0%,rgba(10,81,21,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(10,81,21,0.00) 0%,rgba(10,81,21,1.00) 100%);
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: large;
+	padding:5px;
+	}
+	.mini_buttom2{
+	position:relative;
+	float:left;
+	margin-left:1%;
+	background-color: #990000;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size:12px;
+	padding:5px;
+	}
+	.mini_buttom{
+	position:relative;
+	float:left;
+	margin-left:1%;
+	background-color:#0bd82d;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(10,81,21,0.00)),color-stop( 100% , rgba(10,81,21,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(10,81,21,0.00) 0%,rgba(10,81,21,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(10,81,21,0.00) 0%,rgba(10,81,21,1.00) 100%);
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size:12px;
+	padding:5px;
+	}
+.buttoms{
 width:500px;
 height:32px;
 margin-top:300px;
 margin-left:350px;
 }
-#buttoms2{
+.mini_buttoms1{
+width:120px;
+height:32px;
+}
+.buttoms2{
 width:500px;
 height:32px;
 margin-top:200px;
 margin-left:20%;
 }
-#buttoms3{
+.buttoms3{
 width:500px;
 height:32px;
 margin-top:200px;
 margin-left:54%;
 }
-#game {
+.game {
 	font-size: 22px;
 	color: #FFF;
 	background-image: url(imagenes/fondo_partidos.png);
@@ -310,7 +373,7 @@ margin-left:54%;
 	border-radius:20px;
 	vertical-align:top;
 }
-#game2 {
+.game2 {
 	font-size: 22px;
 	color: #FFF;
 	background-image: url(imagenes/fondo_partidos.png);
@@ -326,21 +389,21 @@ margin-left:54%;
 	border-radius:20px;
 	vertical-align:top;
 }
-#jornada{
+.jornada{
 	
 font-size: 18px;
 	color: #FFF;
 	position:relative;
 	float:left;
 }
-#summary1{
+.summary1{
 	position:relative;
 	float:left;
 	width:250px;
 	margin-left:20%;
 	margin-top:5%;
 }
-#summary2{
+.summary2{
 	width:250px;
 	position:relative;
 	float:left;
@@ -391,9 +454,10 @@ vertical-align:central;
 	-moz-transform:rotate(-20deg);
 	-webkit-transform:rotate(-20deg);
 }
-#select{
+.select{
 	position:relative;
 	float:left;
 	margin-left:6%;
+	
 
 }
