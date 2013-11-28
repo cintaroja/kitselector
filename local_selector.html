@@ -69,9 +69,11 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="kit_sent">
+<div id="kit_sent">
    <div class="txt"> Su selección ha sido enviada correctamente.</br> En breve recibirá aprovación</div>
-    <div class="buttoms"><a href="http://www.lfp.es"><div class="buttom">Salir</div></a> <a href="index.html">
+    <div class="buttoms"><button type="button" onClick="cerrar()" style="position:relative;float:right;top:-260px;right:-26%;">
+            	<img src="imagenes/cerrar.svg" width="16" height="16" />
+            </button><a href="http://www.lfp.es"><div class="buttom">Salir</div></a> <a href="index.html">
     <div class="buttom">Inicio</div></a>
     </div>
     </div>
@@ -368,15 +370,9 @@
 		</ul><!-- end Slider #2 -->
 
 	</div><!-- end wrapper -->
-    <div class="send_buttom"><input type="submit" onclick="inicializar()" style="width: 90px;
-	height: 30px;background-color: #990000;
-	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
-	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
-	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
-	border-radius: 5px;
-	color: #FFFFFF;
-	font-size: large;">
     </div>
+    <a href="#"><div class="send_buttom" onClick="inicializar()">Enviar 
+    </div></a>
     <a href="http://www.lfp.es"><div class="buttom">Salir</div></a> <a href="index.html">
     <div class="buttom">Inicio</div></a>
     
@@ -387,7 +383,6 @@
 
 
         
-    </div>
 
     <!--FOOTER-->
     <blockquote>&nbsp;</blockquote>

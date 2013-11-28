@@ -52,8 +52,9 @@ body, html {
 #container{
 	padding:20px;
 	height:600px;
-	overflow:auto;
-}
+overflow-x:hidden; 
+overflow-y:auto;
+	}
 .gol_keeper_slider{
 position:relative;
 float:left;
@@ -171,17 +172,26 @@ margin right:95px;
 	margin-left:110px;
 }
 .send_buttom{
-	
+	clear:right;	
 	position: relative;
-		
-}
-.kit_sent{
+	float: left;
+	margin-top: 10%;
+	margin-left:23%;
+	background-color: #0033FF;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(0,138,255,1.00) 100%);
+	color: #FFFFFF;
+	font-size: large;
+	padding: 5px;
+	}
+#kit_sent{
 	z-index: 100000;
 	position: absolute;
-	top: 50%;
+	top: 20%;
 	left: 50%;
 	width: 1000px;
-	height: 700px;
+	height: 800px;
 	margin-top:-150px;
 	margin-left: -500px;
 	visibility: hidden;
@@ -191,11 +201,15 @@ margin right:95px;
 	background-size: 1000px auto;
 			}
 			
-.kit_sent2{
+#kit_sent2{
 	z-index: 100000;
 	position: absolute;
-	top: 50%;
+	top: 20%;
 	left: 50%;
+	width: 1000px;
+	height: 800px;
+	margin-top:-150px;
+	margin-left: -500px;
 	visibility:hidden;
 	width: 1000px;
 	height: 700px;
@@ -207,16 +221,16 @@ margin right:95px;
 	background-size: 1000px auto;
 			}
 			
-			.kit_sent3{
+			#kit_sent3{
 	z-index: 100000;
 	position: absolute;
-	top: 54%;
+	top: 20%;
 	left: 50%;
 	width: 1000px;
-	height: 730px;
-	margin-top: -200px;
+	height: 800px;
+	margin-top:-150px;
 	margin-left: -500px;
-	background-color: #999999;
+		background-color: #999999;
 	background-image: url(imagenes/fondo_equipaciones.jpg);
 	background-repeat:repeat;
 	background-size: 1000px auto;
@@ -235,9 +249,9 @@ margin right:95px;
 	clear:right;
 	vertical-align: central;
 	color: #FFFFFF;
-	margin-right:150px;
-	margin-left:150px;
-	margin-bottom:50px;
+	margin-right:10%;
+	margin-left:12%;
+	margin-bottom:3%;
 	font-size: xx-large;
 	text-align: rigth;
 	text-indent: 25px;
@@ -271,27 +285,27 @@ margin right:95px;
 	background-repeat: repeat;
 	}
 	.buttom{
-	position:relative;
-	float:left;
-	margin:40px;
-	background-color: #990000;
+	position: relative;
+	float: left;
+	margin-top: 10%;
+	margin-left:20%;
+	background-color: #0033FF;
 	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
 	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
-	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
-	border-radius: 5px;
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(0,138,255,1.00) 100%);
 	color: #FFFFFF;
 	font-size: large;
-	padding:5px;
+	padding: 5px;
 	}
+	
 	.buttom2{
 	position:relative;
 	float:left;
 	margin-left:1%;
-	background-color: #990000;
+	background-color: #0033FF;
 	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
 	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
-	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
-	border-radius: 5px;
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(0,138,255,1.00) 100%);
 	color: #FFFFFF;
 	font-size: large;
 	padding:5px;
@@ -300,11 +314,10 @@ margin right:95px;
 	position:relative;
 	float:left;
 	margin-left:1%;
-	background-color:#0bd82d;
-	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(10,81,21,0.00)),color-stop( 100% , rgba(10,81,21,1.00)));
-	background-image: -webkit-linear-gradient(270deg,rgba(10,81,21,0.00) 0%,rgba(10,81,21,1.00) 100%);
-	background-image: linear-gradient(180deg,rgba(10,81,21,0.00) 0%,rgba(10,81,21,1.00) 100%);
-	border-radius: 5px;
+	background-color: #0033FF;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(0,138,255,1.00) 100%);
 	color: #FFFFFF;
 	font-size: large;
 	padding:5px;
@@ -313,11 +326,10 @@ margin right:95px;
 	position:relative;
 	float:left;
 	margin-left:1%;
-	background-color: #990000;
+	background-color: #0033FF;
 	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
 	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
-	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
-	border-radius: 5px;
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(0,138,255,1.00) 100%);
 	color: #FFFFFF;
 	font-size:12px;
 	padding:5px;
@@ -326,11 +338,10 @@ margin right:95px;
 	position:relative;
 	float:left;
 	margin-left:1%;
-	background-color:#0bd82d;
-	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(10,81,21,0.00)),color-stop( 100% , rgba(10,81,21,1.00)));
-	background-image: -webkit-linear-gradient(270deg,rgba(10,81,21,0.00) 0%,rgba(10,81,21,1.00) 100%);
-	background-image: linear-gradient(180deg,rgba(10,81,21,0.00) 0%,rgba(10,81,21,1.00) 100%);
-	border-radius: 5px;
+	background-color: #0033FF;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(0,138,255,1.00) 100%);
 	color: #FFFFFF;
 	font-size:12px;
 	padding:5px;
@@ -360,35 +371,53 @@ margin-left:54%;
 .game {
 	font-size: 22px;
 	color: #FFF;
-	background-image: url(imagenes/fondo_partidos.png);
-	background-repeat: repeat-x;
+	background-color: #0033FF;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(0,138,255,1.00) 100%);
+	color: #FFFFFF;
 	text-align: center;
 	padding: 10px;
 	float: left;
-	height: 50px;
-	width: 850px;
-	margin-top: 70px;
-	margin-left: 50px;
+	height: 7%;
+	width: 85%;
+	margin-top: 10%;
+	margin-left: 7%;
 	position: relative;
-	border-radius:20px;
 	vertical-align:top;
 }
+.game:hover{
+	background-color:#006;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(0,96,255,1.00) 100%);
+	color: #FFFFFF;
+	}
 .game2 {
 	font-size: 22px;
 	color: #FFF;
-	background-image: url(imagenes/fondo_partidos.png);
-	background-repeat: repeat-x;
+	background-color: #0033FF;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(0,138,255,1.00) 100%);
+	color: #FFFFFF;
 	text-align: center;
 	padding: 10px;
 	float: left;
-	height: 50px;
-	width: 850px;
-	margin-left: 50px;
+	height: 7%;
+	width: 85%;
+	margin-left: 7%;
 	margin-top:2%;
 	position: relative;
-	border-radius:20px;
 	vertical-align:top;
 }
+.game2:hover{
+	background-color:#006;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(0,96,255,1.00) 100%);
+	color: #FFFFFF;
+		}
 .jornada{
 	
 font-size: 18px;
@@ -397,11 +426,9 @@ font-size: 18px;
 	float:left;
 }
 .summary1{
-	position:relative;
-	float:left;
-	width:250px;
-	margin-left:20%;
-	margin-top:5%;
+	text-align:center;
+	margin-left:5%;
+	margin-right:5%;
 }
 .summary2{
 	width:250px;

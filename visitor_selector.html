@@ -47,11 +47,11 @@
     
 </head>
 <body onLoad="cerrar()" >
- <div id="fixed">
+ <div class="fixed">
 		
         
           <img src="imagenes/malaga.png" alt="picture" width="60"></a>
-  <div id="name2">Málaga C.F.</div>
+  <div class="name2">Málaga C.F.</div>
     
   
   <div class="pull-left">
@@ -91,9 +91,11 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 
 <div id="kit_sent">
-   <div id="txt"> Su selección ha sido enviada correctamente.</br> En breve recibirá aprovación</div>
-    <div id="buttoms"><a href="http://www.lfp.es"><div id="buttom">Salir</div></a> <a href="index.html">
-    <div id="buttom">Inicio</div></a>
+   <div class="txt"> Su selección ha sido enviada correctamente.</br> En breve recibirá aprovación</div>
+    <div class="buttoms"><button type="button" onClick="cerrar()" style="position:relative;float:right;top:-260px;right:-26%;">
+            	<img src="imagenes/cerrar.svg" width="16" height="16" />
+            </button><a href="index.html"><a href="http://www.lfp.es"><div class="buttom">Salir</div></a> <a href="index.html">
+    <div class="buttom">Inicio</div></a>
     </div>
     </div>
     </div>
@@ -232,33 +234,33 @@
 
         
         <div id="container">
-        <div id="logo">
+        <div class="logo">
         
-        <div id="shield">
+        <div class="shield">
         
           <img src="imagenes/malaga.png" alt="picture" width="50"></a>
         
          </div>
         
         
-        <div id="name">Málaga C.F.</div>
-        <div id="vs"><img src="imagenes/vs.png" width="50" height="41">  </div>      
-        <div id="shield">
+        <div class="name">Málaga C.F.</div>
+        <div class="vs"><img src="imagenes/vs.png" width="50" height="41">  </div>      
+        <div class="shield">
         
           <img src="imagenes/FC-Barcelona.png" alt="picture" width="50"></a>
         
          </div>
         
         
-        <div id="name">F.C. Barcelona</div>
+        <div class="name">F.C. Barcelona</div>
         </div>
-        <div id="pl_gk">
-       <div id="players">Jugadores
+        <div class="pl_gk">
+       <div class="players">Jugadores
        </div>
-        <div id="golkeepers">Porteros
+        <div class="golkeepers">Porteros
        </div>
        </div>
-        <div id="players_slider">
+        <div class="players_slider">
             
 <div id="wrapper">
 		<!-- MovingBoxes Slider -->
@@ -334,7 +336,7 @@
 	</div><!-- end wrapper -->
     </div>
       
-    <div id="gol_keeper_slider">
+    <div class="gol_keeper_slider">
     <div id="wrapper4">
     <ul id="slider_golkeeper">
 
@@ -389,19 +391,14 @@
 		</ul><!-- end Slider #2 -->
 
 	</div><!-- end wrapper -->
-    <div id="send_buttom"><input type="submit" onclick="inicializar()" style="width: 90px;
-	height: 30px;background-color: #990000;
-	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,255,255,0.00)),color-stop( 100% , rgba(255,0,0,1.00)));
-	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
-	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,1.00) 100%);
-	border-radius: 5px;
-	color: #FFFFFF;
-	font-size: large;">
     </div>
-    <a href="http://www.lfp.es"><div id="buttom">Salir</div></a> <a href="index.html">
-    <div id="buttom">Inicio</div></a>
+    <a href="#"><div class="send_buttom" onClick="inicializar()">Enviar 
+    </div></a>
+    <a href="http://www.lfp.es"><div class="buttom">Salir</div></a> <a href="index.html">
+    <div class="buttom">Inicio</div></a>
     
-    </div>
+    
+
         </div>
 
 </div>
