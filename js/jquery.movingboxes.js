@@ -108,7 +108,7 @@ document.getElementById("container").style.opacity=1
 			base.currentlyMoving = false;
 			base.curPanel = (o.initAnimation) ? 1 : base.getHash() || o.startPanel;
 			// save original slider width
-			base.width = (o.width) ? parseInt(o.width,10) : base.$el.width();
+			base.width = (o.width) ? parseInt(o.width,30) : base.$el.width();
 			// save panel width, o.panelWidth originally a fraction (0.5 of o.width) if defined, or get first panel width
 			// now can be set after initialization to resize using fraction (value <= 2) or px (all values > 2)
 			base.pWidth = (o.panelWidth) ? (o.panelWidth <=2 ? o.panelWidth * base.width : o.panelWidth) : base.$panels.eq(0).width();

@@ -42,12 +42,12 @@ change .current class name using plugin option, currentPanel : 'current' */
 
 /*** Inside the panel ***/
 .mb-inside {
-	padding: 5px;
+	padding: 3px;
 
 }
 
 .mb-inside * {
-	max-width: 100%;
+	max-width: 90%;
 }
 
 /*** Left & Right Navigation Arrows ***/
